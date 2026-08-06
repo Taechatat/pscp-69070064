@@ -1,10 +1,10 @@
 '''Temperature'''
 temp = float(input())
-BEF = input()
-AFT = input()
+BEF = input().strip().upper()
+AFT = input().strip().upper()
 
 if BEF != "C":
-    if BEF == "k":
+    if BEF == "K":
         temp =  temp - 273.15
     elif BEF == "F":
         temp = (temp - 32)*5/9
